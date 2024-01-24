@@ -1,0 +1,24 @@
+.contacts__title {
+  color: $secondary-black;
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  color: $basic-gray;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contacts__title--mobile {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contacts__text--mobile {
+  font-size: 14px;
+  line-height: 20px;
+}

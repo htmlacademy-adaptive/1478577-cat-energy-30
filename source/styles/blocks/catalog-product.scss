@@ -1,0 +1,21 @@
+.catalog-product__list, .catalog-product__items {
+  list-style: none;
+}
+
+.catalog-product__title {
+  color: $secondary-gray;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+}
+
+.catalog-product__element {
+  color: $secondary-gray;
+  text-align: center;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -4,8 +4,16 @@
   font-size: 60px;
   line-height: 60px;
 }
+
 .high-header--mobile {
   color: $basic-white;
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.high-header--black {
+  color: $basic-black;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
