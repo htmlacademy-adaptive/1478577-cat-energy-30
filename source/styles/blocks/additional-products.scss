@@ -1,0 +1,33 @@
+.additional-products__title {
+  color: $secondary-gray;
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.additional-products__text {
+  color: $basic-gray;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+.additional-products__text--mobile {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-products__title--mobile {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.additional-products__banner {
+  color: $basic-white;
+  font-family: $primary-font;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}

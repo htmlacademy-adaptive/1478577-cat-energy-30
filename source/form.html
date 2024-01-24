@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>форма Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -25,20 +26,20 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--mobile main-nav--tablet">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="index.html" aria-current="page">
+            <a class="main-nav__link main-nav__link--black main-nav__link--current" href="index.html" aria-current="page">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
+            <a class="main-nav__link main-nav__link--black" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
+            <a class="main-nav__link main-nav__link--black" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -49,28 +50,28 @@
 
   <main class="main-container">
     <section class="program-selection">
-      <h1 class="program-selection__title">Подбор программы</h1>
-      <p class="program-selection__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <h1 class="program-selection__title high-header">Подбор программы</h1>
+      <p class="program-selection__subtitle program-selection__subtitle--mobile">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="program-selection__form" action="#">
         <fieldset class="program-selection__group">
           <legend class="visually-hidden">Цель программы</legend>
           <ul class="program-selection__list">
             <li class="program-selection__item">
               <label class="program-selection__label">
-                <span class="program-selection__text">имя:*</span>
-                <input class="program-selection__input" name="cat-name" placeholder="барсик" type="text" required>
+                <span class="program-selection__text form-font">имя:*</span>
+                <input class="program-selection__input form-font" name="cat-name" placeholder="барсик" type="text" required>
               </label>
             </li>
             <li class="program-selection__item">
               <label class="program-selection__label">
-                <span class="program-selection__text">Вес (кг):*</span>
-                <input class="program-selection__input" name="cat-weight" placeholder="7" type="text" required>
+                <span class="program-selection__text form-font">Вес (кг):*</span>
+                <input class="program-selection__input form-font" name="cat-weight" placeholder="7" type="text" required>
               </label>
             </li>
             <li class="program-selection__item">
               <label class="program-selection__label">
-                <span class="program-selection__text">Возраст (лет):</span>
-                <input class="program-selection__input" name="cat-age" placeholder="7" type="text">
+                <span class="program-selection__text form-font">Возраст (лет):</span>
+                <input class="program-selection__input form-font" name="cat-age" placeholder="7" type="text">
               </label>
             </li>
           </ul>
@@ -80,78 +81,78 @@
               <input class="program-selection__input" id="radio1" name="target" type="radio" value="weight loss"
                 checked>
               <label for="radio1">
-                <span class="program-selection__text">Похудение</span>
+                <span class="program-selection__text form-font">Похудение</span>
               </label>
             </li>
             <li class="program-selection__item">
               <input class="program-selection__input" id="radio2" name="target" type="radio" value="weight gain">
               <label for="radio2">
-                <span class="program-selection__text">Набор массы</span>
+                <span class="program-selection__text form-font">Набор массы</span>
               </label>
             </li>
             <li class="program-selection__item">
               <input class="program-selection__input" id="radio3" name="target" type="radio" value="advice">
               <label for="radio3">
-                <span class="program-selection__text">Не знаю (Нужен ваш совет)</span>
+                <span class="program-selection__text form-font">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="program-selection__group">
-          <legend class="program-selection__heading">Контактные данные (владельца кота)</legend>
+          <legend class="program-selection__heading program-selection__heading--mobile ">Контактные данные (владельца кота)</legend>
           <ul class="program-selection__list">
             <li class="program-selection__item">
               <label class="program-selection__label" for="email">
-                <span class="program-selection__text">E-mail:*</span>
+                <span class="program-selection__text form-font">E-mail:*</span>
               </label>
-              <input class="program-selection__input" type="email" name="email" placeholder="кuklachev@gmail.com"
+              <input class="program-selection__input form-font" type="email" name="email" placeholder="кuklachev@gmail.com"
                 id="email" required>
             </li>
             <li class="program-selection__item">
               <label class="program-selection__label" for="tel">
-                <span class="program-selection__text">Телефон:*</span>
+                <span class="program-selection__text form-font">Телефон:*</span>
               </label>
-              <input class="program-selection__input" type="tel" name="telephone" placeholder="8 (960) 900-60-90"
+              <input class="program-selection__input form-font" type="tel" name="telephone" placeholder="8 (960) 900-60-90"
                 id="tel" required>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="program-selection__group">
-          <legend class="program-selection__legend">Комментарий</legend>
-          <textarea class="program-selection__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"
+          <legend class="program-selection__heading program-selection__heading--mobile">Комментарий</legend>
+          <textarea class="program-selection__textarea form-font" name="comment" placeholder="Расскажите обо всех повадках кота"
             cols="30" rows="10"></textarea>
         </fieldset>
 
         <fieldset class="program-selection__group">
-          <legend class="program-selection__heading">Дополнительно</legend>
+          <legend class="program-selection__heading program-selection__heading--mobile">Дополнительно</legend>
           <ul class="program-selection__list">
             <li class="program-selection__item">
               <input class="program-selection__input" name="additionally" id="chek1" type="checkbox" value="sweetener"
                 checked>
-              <label class="program-selection__label" for="chek1">сахарозаменитель</label>
+              <label class="program-selection__label form-font" for="chek1">сахарозаменитель</label>
             </li>
 
             <li class="program-selection__item">
               <input class="program-selection__input" name="additionally" id="chek2" type="checkbox" value="water">
-              <label class="program-selection__label" for="chek2">питьевая вода</label>
+              <label class="program-selection__label form-font" for="chek2">питьевая вода</label>
             </li>
 
             <li class="program-selection__item">
               <input class="program-selection__input" name="additionally" id="chek3" type="checkbox" value="milk">
-              <label class="program-selection__label" for="chek3">молоко</label>
+              <label class="program-selection__label form-font" for="chek3">молоко</label>
             </li>
 
             <li class="program-selection__item">
               <input class="program-selection__input" name="additionally" id="chek4" type="checkbox" value="vitamins">
-              <label class="program-selection__label" for="chek4">витамины</label>
+              <label class="program-selection__label form-font" for="chek4">витамины</label>
             </li>
           </ul>
         </fieldset>
 
         <button class="program-selection__button" type="button">отправить заявку</button>
-        <p class="program-selection__additionally">* — Обязательные поля</p>
+        <p class="program-selection__additionally program-selection__additionally--mobile">* — Обязательные поля</p>
       </form>
     </section>
     <section class="contacts">

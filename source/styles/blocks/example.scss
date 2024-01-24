@@ -1,0 +1,37 @@
+.example__list {
+  list-style: none;
+}
+
+.example__term {
+  color: $basic-black;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example_details {
+  color: $primary-font;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__term--tablet {
+  color: $basic-black;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__term--mobile {
+  color: $basic-black;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

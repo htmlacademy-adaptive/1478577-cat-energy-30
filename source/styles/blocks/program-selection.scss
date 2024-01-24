@@ -1,0 +1,39 @@
+.program-selection__subtitle {
+  color: $basic-black;
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.program-selection__subtitle--mobile {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.program-selection__list {
+  list-style: none;
+}
+
+.program-selection__heading {
+  color: $basic-black;
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.program-selection__heading--mobile {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.program-selection__additionally {
+  color: $basic-black;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.program-selection__additionally--mobile {
+  font-size: 14px;
+}

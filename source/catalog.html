@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Каталог продукции Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -18,8 +19,8 @@
 <body class="page__body">
   <header class="main-header main-header--color">
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo-image logo-image--icone" src="#" width="111" height="111" alt="Кэт энерджи">
-      <img class="logo-image logo-image--text" src="#" width="111" height="111" alt="Кэт энерджи">
+      <img class="logo__image logo__image--icone" src="#" width="111" height="111" alt="Кэт энерджи">
+      <img class="logo__image logo__image--text" src="#" width="111" height="111" alt="Кэт энерджи">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle button-toggle" type="button">
@@ -46,7 +47,7 @@
   </header>
   <main class="main-container">
     <section class="catalog-product">
-      <h1 class="heading">Каталог продукции</h1>
+      <h1 class="catalog-product__heading high-catalog-header">Каталог продукции</h1>
 
       <ul class="catalog-product__list">
         <li class="catalog-product__item">
@@ -268,8 +269,8 @@
 
         <li class="catalog-product__item">
           <div>
-            <p>Показать еще 100500 товаров</p>
-            <p>На самом деле вкусов гораздо больше!</p>
+            <p class="catalog-product__title">Показать еще 100500 товаров</p>
+            <p class="catalog-product__element">На самом деле вкусов гораздо больше!</p>
             <a href="#">
               Показать всё
             </a>
@@ -280,15 +281,15 @@
 
     <section class="additional-products">
       <div class="additional-products__wrapper">
-        <h2 class="additional-products__heading">Дополнительные товары</h2>
+        <h2 class="additional-products__heading additional-header additional-header--mobile">Дополнительные товары</h2>
         <div>
           <ul class="additional-products__list">
             <li class="additional-products__item">
               <div>
-                <h3 class="additional-products__title">Сахарозаменитель</h3>
+                <h3 class="additional-products__title additional-products__title--mobile">Сахарозаменитель</h3>
                 <div>
-                  <p class="additional-products__text">1 упаковка (100 г)</p>
-                  <p class="additional-products__text">200 ₽</p>
+                  <p class="additional-products__text additional-products__text--mobile">1 упаковка (100 г)</p>
+                  <p class="additional-products__text additional-products__text--mobile">200 ₽</p>
                 </div>
               </div>
               <a class="additional-products__link" href="#">Заказать</a>
@@ -296,10 +297,10 @@
 
             <li class="additional-products__item">
               <div>
-                <h3 class="additional-products__title">Питьевая вода</h3>
+                <h3 class="additional-products__title additional-products__title--mobile">Питьевая вода</h3>
                 <div>
-                  <p class="additional-products__text">5 литров</p>
-                  <p class="additional-products__text">50 ₽</p>
+                  <p class="additional-products__text additional-products__text--mobile">5 литров</p>
+                  <p class="additional-products__text additional-products__text--mobile">50 ₽</p>
                 </div>
               </div>
               <a class="additional-products__link" href="#">Заказать</a>
@@ -307,10 +308,10 @@
 
             <li class="additional-products__item">
               <div>
-                <h3 class="additional-products__title">молоко</h3>
+                <h3 class="additional-products__title additional-products__title--mobile">молоко</h3>
                 <div>
-                  <p class="additional-products__text">1 литр</p>
-                  <p class="additional-products__text">100 ₽</p>
+                  <p class="additional-products__text additional-products__text--mobile">1 литр</p>
+                  <p class="additional-products__text additional-products__text--mobile">100 ₽</p>
                 </div>
               </div>
               <a class="additional-products__link" href="#">Заказать</a>
@@ -318,17 +319,17 @@
 
             <li class="additional-products__item">
               <div>
-                <h3 class="additional-products__title">витамины</h3>
+                <h3 class="additional-products__title additional-products__title--mobile">витамины</h3>
                 <div>
-                  <p class="additional-products__text">1 упаковка (30 г)</p>
-                  <p class="additional-products__text">300 ₽</p>
+                  <p class="additional-products__text additional-products__text--mobile">1 упаковка (30 г)</p>
+                  <p class="additional-products__text additional-products__text--mobile">300 ₽</p>
                 </div>
               </div>
               <a class="additional-products__link" href="#">Заказать</a>
             </li>
           </ul>
           <div>
-            <p>Закажите все и получите чехол для кота в подарок!</p>
+            <p class="additional-products__banner">Закажите все и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </div>
@@ -336,8 +337,8 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__title contacts__title--mobile">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__text contacts__text--mobile">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <iframe src="https://yandex.ru/map-widget/v1/?ll=44.006520%2C56.326799&z=11"></iframe>
       </div>
     </section>
@@ -346,7 +347,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo logo" href="index.html">
-        <img class="logo-image logo-image--text" src="#" width="111" height="111" alt="Кэт энерджи">
+        <img class="logo__image logo__image--text" src="#" width="111" height="111" alt="Кэт энерджи">
       </a>
       <section class="main-footer__social social">
         <h2 class="visually-hidden">Социальные сети</h2>
