@@ -29,7 +29,8 @@
       <nav class="main-nav main-nav--mobile main-nav--tablet">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--black main-nav__link--current" href="index.html" aria-current="page">
+            <a class="main-nav__link main-nav__link--black main-nav__link--current" href="index.html"
+              aria-current="page">
               Главная
             </a>
           </li>
@@ -51,7 +52,8 @@
   <main class="main-container">
     <section class="program-selection">
       <h1 class="program-selection__title high-header">Подбор программы</h1>
-      <p class="program-selection__subtitle program-selection__subtitle--mobile">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="program-selection__subtitle program-selection__subtitle--mobile">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
       <form class="program-selection__form" action="#">
         <fieldset class="program-selection__group">
           <legend class="visually-hidden">Цель программы</legend>
@@ -59,13 +61,15 @@
             <li class="program-selection__item">
               <label class="program-selection__label">
                 <span class="program-selection__text form-font">имя:*</span>
-                <input class="program-selection__input form-font" name="cat-name" placeholder="барсик" type="text" required>
+                <input class="program-selection__input form-font" name="cat-name" placeholder="барсик" type="text"
+                  required>
               </label>
             </li>
             <li class="program-selection__item">
               <label class="program-selection__label">
                 <span class="program-selection__text form-font">Вес (кг):*</span>
-                <input class="program-selection__input form-font" name="cat-weight" placeholder="7" type="text" required>
+                <input class="program-selection__input form-font" name="cat-weight" placeholder="7" type="text"
+                  required>
               </label>
             </li>
             <li class="program-selection__item">
@@ -100,53 +104,65 @@
         </fieldset>
 
         <fieldset class="program-selection__group">
-          <legend class="program-selection__heading program-selection__heading--mobile ">Контактные данные (владельца кота)</legend>
+          <legend class="program-selection__heading program-selection__heading--mobile ">Контактные данные (владельца
+            кота)</legend>
           <ul class="program-selection__list">
             <li class="program-selection__item">
               <label class="program-selection__label" for="email">
                 <span class="program-selection__text form-font">E-mail:*</span>
               </label>
-              <input class="program-selection__input form-font" type="email" name="email" placeholder="кuklachev@gmail.com"
-                id="email" required>
+              <input class="program-selection__input form-font" type="email" name="email"
+                placeholder="кuklachev@gmail.com" id="email" required>
             </li>
             <li class="program-selection__item">
               <label class="program-selection__label" for="tel">
                 <span class="program-selection__text form-font">Телефон:*</span>
               </label>
-              <input class="program-selection__input form-font" type="tel" name="telephone" placeholder="8 (960) 900-60-90"
-                id="tel" required>
+              <input class="program-selection__input form-font" type="tel" name="telephone"
+                placeholder="8 (960) 900-60-90" id="tel" required>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="program-selection__group">
           <legend class="program-selection__heading program-selection__heading--mobile">Комментарий</legend>
-          <textarea class="program-selection__textarea form-font" name="comment" placeholder="Расскажите обо всех повадках кота"
-            cols="30" rows="10"></textarea>
+          <textarea class="program-selection__textarea form-font" name="comment"
+            placeholder="Расскажите обо всех повадках кота" cols="30" rows="10"></textarea>
         </fieldset>
 
         <fieldset class="program-selection__group">
           <legend class="program-selection__heading program-selection__heading--mobile">Дополнительно</legend>
           <ul class="program-selection__list">
-            <li class="program-selection__item">
-              <input class="program-selection__input" name="additionally" id="chek1" type="checkbox" value="sweetener"
-                checked>
-              <label class="program-selection__label form-font" for="chek1">сахарозаменитель</label>
+            <li class="form-item">
+              <label class="form-item__label">
+                <input class="form-item__input" name="additionally" type="checkbox" value="sweetener" checked>
+                <span class="form-item__mark"></span>
+                <span class="form-item__name">сахарозаменитель</span>
+              </label>
             </li>
 
-            <li class="program-selection__item">
-              <input class="program-selection__input" name="additionally" id="chek2" type="checkbox" value="water">
-              <label class="program-selection__label form-font" for="chek2">питьевая вода</label>
+            <li class="form-item">
+              <label class="form-item__label">
+                <input class="form-item__input" name="additionally" type="checkbox" value="water">
+                <span class="form-item__mark"></span>
+                <span class="form-item__name">питьевая вода</span>
+              </label>
             </li>
 
-            <li class="program-selection__item">
-              <input class="program-selection__input" name="additionally" id="chek3" type="checkbox" value="milk">
-              <label class="program-selection__label form-font" for="chek3">молоко</label>
+            <li class="form-item">
+              <label class="form-item__label">
+                <input class="form-item__input" name="additionally" type="checkbox" value="milk">
+                <span class="form-item__mark"></span>
+                <span class="form-item__name">молоко</span>
+              </label>
             </li>
 
-            <li class="program-selection__item">
-              <input class="program-selection__input" name="additionally" id="chek4" type="checkbox" value="vitamins">
-              <label class="program-selection__label form-font" for="chek4">витамины</label>
+            <li class="form-item">
+              <label class="form-item__label">
+                <input class="form-item__input" name="additionally" type="checkbox" value="vitamins">
+                <span class="form-item__mark"></span>
+                <span class="form-item__name">витамины</span>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -168,27 +184,22 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo logo" href="index.html">
-        <img class="logo-image logo-image--text" src="#" width="111" height="111" alt="Кэт энерджи">
+        <img class="main-footer__logo-text" src="images/logo-text.svg" width="128" height="24" alt="Кэт энерджи">
       </a>
       <section class="main-footer__social social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
-              <img src="#" width="111" height="111" alt="Вконтакте">
-              <span class="visually-hidden">VK</span>
+            <a class="social__link social__link--vk" href="#" aria-label="Cat Energy в Вконтакте.">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--YouTube" href="#">
-              <img src="#" width="111" height="111" alt="Ютуб">
+            <a class="social__link social__link--YouTube" href="#" aria-label="Cat Energy в YouTube">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
           <li class="social__item">
-            <img src="#" width="111" height="111" alt="Телеграмм">
-            <a class="social__link social__link--tg" href="#">
-              <span class="visually-hidden">Telegram</span>
+            <a class="social__link social__link--tg" href="#" aria-label="Cat Energy в Telegram">
             </a>
           </li>
         </ul>
@@ -198,8 +209,7 @@
         <a class="copyright__link" href="#">
           <span class="copyright__text">HTML Academy</span>
         </a>
-        <a class="copyright__link" href="#">
-          <img class="copyright__img" src="#" width="111" height="111" alt="Права принадлежат">
+        <a class="copyright__link" href="#" aria-label="Права принадлежат HTML Academy">
         </a>
       </div>
 

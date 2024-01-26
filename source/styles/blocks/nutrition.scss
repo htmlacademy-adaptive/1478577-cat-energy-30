@@ -1,7 +1,24 @@
-.nutrition__text {
-  color: $basic-gray;
-  font-size: 14px;
-  line-height: 18px;
+.nutrition__item {
+  position: relative;
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 67px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--cat-slim::before {
+    background-image: url("../../images/icons/stack.svg#cat-slim");
+    background-size: 50px, 53px;
+  }
+
+  &--cat-pro::before {
+    background-image: url("../../images/icons/stack.svg#cat-pro");
+    background-size: 67px, 50px;
+  }
+
 }
 
 .nutrition__link {

@@ -1,1 +1,30 @@
-//
+.social__list {
+  display: flex;
+  gap: 24px;
+}
+.social__link {
+  display: block;
+  &--vk {
+    background-image: url("../../images/icons/stack.svg#vkontakte");
+    background-size: 28px, 22px;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 22px;
+
+  }
+  &--YouTube {
+    background-image: url("../../images/icons/stack.svg#youtube");
+    background-size: 28px, 22px;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 22px;
+
+  }
+  &--tg {
+    background-image: url("../../images/icons/stack.svg#telegram");
+    background-size: 28px, 22px;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 22px;
+  }
+}
