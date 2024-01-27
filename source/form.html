@@ -108,18 +108,25 @@
             кота)</legend>
           <ul class="program-selection__list">
             <li class="program-selection__item">
-              <label class="program-selection__label" for="email">
-                <span class="program-selection__text form-font">E-mail:*</span>
-              </label>
-              <input class="program-selection__input form-font" type="email" name="email"
-                placeholder="кuklachev@gmail.com" id="email" required>
+
+              <div class="program-selection__wrapper program-selection__wrapper--mail">
+                <label class="program-selection__label" for="email">
+                  <span class="program-selection__text form-font">E-mail:*</span>
+                </label>
+                <input class="program-selection__input program-selection__input--img form-font" type="email"
+                  name="email" placeholder="кuklachev@gmail.com" id="email" required>
+              </div>
+
             </li>
             <li class="program-selection__item">
-              <label class="program-selection__label" for="tel">
-                <span class="program-selection__text form-font">Телефон:*</span>
-              </label>
-              <input class="program-selection__input form-font" type="tel" name="telephone"
-                placeholder="8 (960) 900-60-90" id="tel" required>
+              <div class="program-selection__wrapper program-selection__wrapper--telephone">
+                <label class="program-selection__label" for="tel">
+                  <span class="program-selection__text form-font">Телефон:*</span>
+                </label>
+                <input class="program-selection__input form-font" type="tel" name="telephone"
+                  placeholder="8 (960) 900-60-90" id="tel" required>
+              </div>
+
             </li>
           </ul>
         </fieldset>
@@ -135,7 +142,8 @@
           <ul class="program-selection__list">
             <li class="form-item">
               <label class="form-item__label">
-                <input class="form-item__input" name="additionally" type="checkbox" value="sweetener" checked>
+                <input class="form-item__input visually-hidden" name="additionally" type="checkbox" value="sweetener"
+                  checked>
                 <span class="form-item__mark"></span>
                 <span class="form-item__name">сахарозаменитель</span>
               </label>
@@ -143,7 +151,7 @@
 
             <li class="form-item">
               <label class="form-item__label">
-                <input class="form-item__input" name="additionally" type="checkbox" value="water">
+                <input class="form-item__input visually-hidden" name="additionally" type="checkbox" value="water">
                 <span class="form-item__mark"></span>
                 <span class="form-item__name">питьевая вода</span>
               </label>
@@ -151,7 +159,7 @@
 
             <li class="form-item">
               <label class="form-item__label">
-                <input class="form-item__input" name="additionally" type="checkbox" value="milk">
+                <input class="form-item__input visually-hidden" name="additionally" type="checkbox" value="milk">
                 <span class="form-item__mark"></span>
                 <span class="form-item__name">молоко</span>
               </label>
@@ -159,7 +167,7 @@
 
             <li class="form-item">
               <label class="form-item__label">
-                <input class="form-item__input" name="additionally" type="checkbox" value="vitamins">
+                <input class="form-item__input visually-hidden" name="additionally" type="checkbox" value="vitamins">
                 <span class="form-item__mark"></span>
                 <span class="form-item__name">витамины</span>
               </label>
