@@ -1,27 +1,16 @@
 .additional-products__title {
   color: $secondary-gray;
   font-family: $secondary-font;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
 }
 
 .additional-products__text {
   color: $basic-gray;
   font-family: $primary-font;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-
-.additional-products__text--mobile {
   font-size: 14px;
   line-height: 14px;
-}
-
-.additional-products__title--mobile {
-  font-size: 16px;
-  line-height: 16px;
 }
 
 .additional-products__banner {
@@ -30,4 +19,27 @@
   text-align: center;
   font-size: 16px;
   line-height: 20px;
+}
+
+.additional-products__cover {
+  background-image:
+  linear-gradient(rgba($basic-green, 0.85), rgba($basic-green, 0.85)),
+    image-set(url("../../images/cat-background-catalog@1x.webp") type("image/webp") 1x,
+      url("../../images/cat-background-catalog@2x.webp") type("image/webp") 2x,
+      url("../../images/cat-background-catalog@1x.jpg") type("image/jpg") 1x,
+      url("../../images/cat-background-catalog@2x.jpg") type("image/jpg") 2x);
+  background-repeat: no-repeat;
+  background-size: cover, auto, cover;
+  background-position: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 45px;
+    background-image: url("../../images/icons/stack.svg#icon_gift");
+    background-repeat: no-repeat;
+    background-size: 80px auto;
+  }
 }

@@ -5,15 +5,16 @@
 .social__link {
   display: block;
   &--vk {
-    background-image: url("../../images/icons/stack.svg#vkontakte");
+    mask-image: url("../../images/icons/stack.svg#vkontakte");
+    background-color: $icone-gray;
     background-size: 28px, 22px;
     background-repeat: no-repeat;
     width: 28px;
     height: 22px;
-
   }
   &--YouTube {
-    background-image: url("../../images/icons/stack.svg#youtube");
+    mask-image: url("../../images/icons/stack.svg#youtube");
+    background-color: $icone-gray;
     background-size: 28px, 22px;
     background-repeat: no-repeat;
     width: 28px;
@@ -21,10 +22,18 @@
 
   }
   &--tg {
-    background-image: url("../../images/icons/stack.svg#telegram");
+    mask-image: url("../../images/icons/stack.svg#telegram");
+    background-color: $icone-gray;
     background-size: 28px, 22px;
     background-repeat: no-repeat;
     width: 28px;
     height: 22px;
+  }
+  &:hover {
+    background-color: $basic-green;
+  }
+  &:active {
+    background-color: $basic-green;
+    opacity: 0.3;
   }
 }
