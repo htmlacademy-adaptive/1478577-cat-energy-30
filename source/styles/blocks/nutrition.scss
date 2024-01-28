@@ -1,5 +1,6 @@
 .nutrition__item {
   position: relative;
+
   &::before {
     content: "";
     position: relative;
@@ -9,6 +10,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
   &--cat-slim::before {
     background-image: url("../../images/icons/stack.svg#cat-slim");
     background-size: 50px, 53px;
@@ -18,7 +20,6 @@
     background-image: url("../../images/icons/stack.svg#cat-pro");
     background-size: 67px, 50px;
   }
-
 }
 
 .nutrition__link {

@@ -20,17 +20,19 @@
     background-image: url("../../images/icons/stack.svg#icone-leaf");
     background-size: 60px, 60px;
   }
+
   &--water::before {
     background-image: url("../../images/icons/stack.svg#icone-water");
     background-size: 60px, 60px;
   }
+
   &--eat::before {
     background-image: url("../../images/icons/stack.svg#icone-eat");
     background-size: 60px, 60px;
   }
+
   &--alarm::before {
     background-image: url("../../images/icons/stack.svg#icone-alarm");
     background-size: 60px, 60px;
   }
 }
-

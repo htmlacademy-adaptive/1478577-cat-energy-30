@@ -37,14 +37,18 @@
 .program-selection__additionally--mobile {
   font-size: 14px;
 }
+
 .program-selection__input {
   border: 1px solid $special-gray2;
+
   &--img {
     min-width: 217px;
   }
+
   &:hover {
     border-color: $special-gray;
   }
+
   &:user-invalid {
     border: 2px solid $erorr-color;
   }
@@ -52,18 +56,21 @@
 
 .program-selection__wrapper {
   display: flex;
+
   &:has(.program-selection__input:focus) {
-   &::after {
-    border: 2px solid $basic-gray;
-    background-color: $basic-green;
+    &::after {
+      border: 2px solid $basic-gray;
+      background-color: $basic-green;
+    }
   }
-  }
+
   &:has(.program-selection__input:user-invalid) {
     &::after {
-     background-color: $erorr-color;
-   }
-   }
+      background-color: $erorr-color;
+    }
+  }
 }
+
 .program-selection__wrapper--mail::after {
   content: "";
   position: relative;
@@ -83,5 +90,3 @@
   mask-image: url("../../images/icons/stack.svg#phone");
   background-color: $basic-black;
 }
-
-
