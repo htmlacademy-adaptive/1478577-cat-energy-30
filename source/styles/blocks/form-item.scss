@@ -1,0 +1,36 @@
+.form-item__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  padding-left: 45px;
+
+  &:hover,
+  &:focus {
+    .form-item__mark {
+      border-color: $hover-gray;
+    }
+  }
+}
+
+.form-item__input {
+  &:disabled + .form-item__mark + .form-item__name {
+    opacity: 0.3;
+  }
+}
+
+.form-item__input[type="checkbox"]:checked + .form-item__mark {
+  background-image: url("../../images/icons/stack.svg#tick");
+  background-repeat: no-repeat;
+  background-size: 26px auto;
+  background-position: center;
+}
+
+.form-item__mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special-gray;
+}

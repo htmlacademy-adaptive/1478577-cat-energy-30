@@ -6,9 +6,20 @@ $basic-black: #000000;
 $basic-gray: #444444;
 $secondary-black: #111111;
 $secondary-gray: #222222;
+$basic-green: #68b738;
 $accent-color: rgba(104, 183, 56, 0.85);
+$special-gray: #cdcdcd;
+$special-gray2: #e7e7e7;
+$hover-gray: #bababa;
+$erorr-color: #ff8282;
+$icone-gray: #666666;
 
 // Шрифты
 $primary-font: "Lato", "arial", sans-serif;
 $secondary-font: "Oswald", "arial", sans-serif;
 
+//Размер экрана
+
+$desktop-width: 1440px;
+$tablet-width: 768px;
+$mobile-width: 320px;

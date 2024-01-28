@@ -1,1 +1,33 @@
-//
+.copyright {
+  display: flex;
+
+  &:has(a:hover, a:focus) {
+    .copyright__link--icone {
+      background-color: $basic-green;
+    }
+  }
+
+  &:has(a:active) {
+    opacity: 0.3;
+
+    .copyright__link--icone {
+      background-color: $basic-green;
+    }
+  }
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: $basic-gray;
+}
+
+.copyright__link--icone {
+  display: block;
+  text-decoration: none;
+  mask-image: url("../../images/icons/stack.svg#logo-html");
+  mask-size: 27px, 34px;
+  mask-repeat: no-repeat;
+  width: 27px;
+  height: 34px;
+  background-color: $icone-gray;
+}

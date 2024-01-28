@@ -1,4 +1,38 @@
-.advantages__description--mobile {
-  font-size: 16px;
-  line-height: 24px;
+.advantages__list {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.advantages__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--leaf::before {
+    background-image: url("../../images/icons/stack.svg#icone-leaf");
+    background-size: 60px, 60px;
+  }
+
+  &--water::before {
+    background-image: url("../../images/icons/stack.svg#icone-water");
+    background-size: 60px, 60px;
+  }
+
+  &--eat::before {
+    background-image: url("../../images/icons/stack.svg#icone-eat");
+    background-size: 60px, 60px;
+  }
+
+  &--alarm::before {
+    background-image: url("../../images/icons/stack.svg#icone-alarm");
+    background-size: 60px, 60px;
+  }
 }
