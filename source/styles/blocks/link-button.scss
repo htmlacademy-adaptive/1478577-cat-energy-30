@@ -8,3 +8,55 @@
   text-decoration: none;
   align-items: center;
 }
+.link-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+
+  color: $basic-white;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+    padding: 14px;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  background-color: $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-collor-dark;
+  }
+
+  &:active {
+    color: $basic-white;
+    background-color: $accent-collor-dark;
+    opacity: 0.3;
+  }
+}
+
+.link-button--special {
+  color: $basic-gray;
+
+  background-color: $button-gray;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $button-gray-special;
+  }
+}
+
+.link-button--catalog {
+  @media (min-width: $tablet-width) {
+    padding: 10px;
+}
+}
